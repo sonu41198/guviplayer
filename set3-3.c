@@ -1,23 +1,23 @@
 #include <stdio.h>
 int main() 
 {
-    int a[10],k,i=0,p,n,j,m=0;
+    int s[10],k,i=0,p,n,j,m=0;
 	scanf("%d %d",&n,&p);
 	for(i=0;i<n;i++)
 	{
-	    scanf("%d",&a[i]);
+	    scanf("%d",&s[i]);
 	}
 	j=0;
     while(j<p)
 	{
 	    scanf("%d",&k);
-	    a[n]=k;
+	    s[n]=k;
 	    n++;
 	   for(i=0;i<n;i++)
 	    {
-	        if(a[i]>=m)
+	        if(s[i]>=m)
 	        {
-	            m=a[i];
+	            m=s[i];
 	        }
 	    }
 	    printf("%d ",m); 
