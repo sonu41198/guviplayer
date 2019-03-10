@@ -2,33 +2,33 @@
 
 int main(void) 
 {
-	char a[20];
+	char s[20];
 	int i;
-	scanf("%[^\n]s",a);
-	for(i=0;a[i]!='\0';i++)
+	scanf("%[^\n]s",s);
+	for(i=0;s[i]!='\0';i++)
 	{
-		if(a[i]==' ')
+		if(s[i]==' ')
 		{
-			a[i]='$';
+			s[i]='$';
 			break;
 		}
 	}
-	for(i=0;a[i]!='\0';i++)
+	for(i=0;s[i]!='\0';i++)
 	{
-		if(a[i]==' ')
+		if(s[i]==' ')
 		{
-			a[i]='+';
+			s[i]='+';
 		}
 	}
-	for(i=0;a[i]!='\0';i++)
+	for(i=0;s[i]!='\0';i++)
 	{
-	if(a[i]=='$')
+	if(s[i]=='$')
 	{
-		a[i]=' ';
+		s[i]=' ';
 	}
-	if(a[i]!='+')
+	if(s[i]!='+')
 	{
-	printf("%c",a[i]);
+	printf("%c",s[i]);
 	}
 	}
 	return 0;
