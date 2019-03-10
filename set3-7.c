@@ -2,20 +2,20 @@
 
 int main(void) 
 {
-	char a[20];
-	scanf("%s",a);
-	for(int i=0;a[i]!='\0';i++)
+	char c[20];
+	scanf("%s",c);
+	for(int i=0;c[i]!='\0';i++)
 	{
-		if(a[i]>96)
+		if(c[i]>96)
 		{
-			a[i]=a[i]-32;
+			c[i]=c[i]-32;
 		}
-		else if(a[i]<91)
+		else if(c[i]<91)
 		{
-			a[i]=a[i]+32;
+			c[i]=c[i]+32;
 		}
 	}
-	printf("%s",a);
+	printf("%s",c);
 		
 		
 		return 0;
