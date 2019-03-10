@@ -1,35 +1,23 @@
 #include <stdio.h>
 
-int main(void) 
+int main()
 {
-	char s[20];
-	int i;
-	scanf("%[^\n]s",s);
-	for(i=0;s[i]!='\0';i++)
-	{
-		if(s[i]==' ')
-		{
-			s[i]='$';
-			break;
-		}
-	}
-	for(i=0;s[i]!='\0';i++)
-	{
-		if(s[i]==' ')
-		{
-			s[i]='+';
-		}
-	}
-	for(i=0;s[i]!='\0';i++)
-	{
-	if(s[i]=='$')
-	{
-		s[i]=' ';
-	}
-	if(s[i]!='+')
-	{
-	printf("%c",s[i]);
-	}
-	}
-	return 0;
+    char a[50],b[50];
+    int i,j=0;
+    scanf("%[^\n]s",a);
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i]==' ')
+        {
+            a[i]='$';
+        }
+    }
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i]!='$') 
+        {
+            printf("%c",a[i]);
+        }
+    }
+    return 0;
 }
